@@ -1,3 +1,12 @@
+```bash
+composer require customberg/customberg-php:"*"
+```
+This was just added before publishing, nothing has been added in those instructions
+Already has a bunch of Backpack plugins included:
+
+But laravel 11 backpack with permissions, language, settings, menu items, pages &  roles plugins all added and loading
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
