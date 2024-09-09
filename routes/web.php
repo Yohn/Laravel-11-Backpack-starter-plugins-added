@@ -18,9 +18,12 @@ Route::middleware([
 /** menu item crud controller
  *
  */
-/*
-Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middleware' => ['web', 'auth'], 'namespace' => 'Admin'], function () {
-    // Backpack\MenuCRUD
-    Route::crud('menu-item', 'MenuItemCrudController');
+
+Route::group([
+        'prefix' => config('backpack.base.route_prefix', 'admin'),
+        'middleware' => ['web', 'auth'],
+        'namespace' => 'App\Http\Controllers\Admin'
+    ], function () {
+        // Backpack\MenuCRUD
+        Route::crud('menu-item', 'MenuItemCrudController');
 });
-*/

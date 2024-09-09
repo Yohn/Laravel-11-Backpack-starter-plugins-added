@@ -1,6 +1,6 @@
 <?php
 
-namespace Backpack\MenuCRUD\app\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin;
 
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
@@ -14,7 +14,7 @@ class MenuItemCrudController extends CrudController
 
     public function setup()
     {
-        $this->crud->setModel("Backpack\MenuCRUD\app\Models\MenuItem");
+        $this->crud->setModel("App\Models\MenuItem");
         $this->crud->setRoute(config('backpack.base.route_prefix').'/menu-item');
         $this->crud->setEntityNameStrings('menu item', 'menu items');
 
@@ -31,7 +31,7 @@ class MenuItemCrudController extends CrudController
                 'name' => 'parent_id',
                 'entity' => 'parent',
                 'attribute' => 'name',
-                'model' => "\Backpack\MenuCRUD\app\Models\MenuItem",
+                'model' => "\App\Models\MenuItem",
             ]);
         });
 
@@ -46,7 +46,7 @@ class MenuItemCrudController extends CrudController
                 'name' => 'parent_id',
                 'entity' => 'parent',
                 'attribute' => 'name',
-                'model' => "\Backpack\MenuCRUD\app\Models\MenuItem",
+                'model' => "\App\Models\MenuItem",
             ]);
             $this->crud->addField([
                 'name' => 'type,link,page_id',
